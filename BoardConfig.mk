@@ -101,5 +101,5 @@ BOARD_RECOVERY_HANDLES_MOUNT := true
 TARGET_LIBAGL_USE_GRALLOC_COPYBITS := true
 COPYBIT_MSM7K := true
 
-BOARD_CUSTOM_RECOVERY_KEYMAPPING:= ../../device/samsung/gio/recovery/recovery_ui.c
+#BOARD_CUSTOM_RECOVERY_KEYMAPPING:= ../../device/samsung/gio/recovery/recovery_ui.c
 BOARD_CUSTOM_GRAPHICS           := ../../../device/samsung/gio/recovery/graphics.c
