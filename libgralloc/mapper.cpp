@@ -50,7 +50,8 @@ pid_t gettid() { return syscall(__NR_gettid);}
 #undef __KERNEL__
 #endif
 
-#define ASHMEM_CACHE_CLEAN_RANGE        _IO(__ASHMEMIOC, 12)
+#define PMEM_CLEAN_CACHES       _IOW(PMEM_IOCTL_MAGIC, 12, unsigned int)
+#define ASHMEM_CACHE_CLEAN_RANGE	_IO(__ASHMEMIOC, 12)
 #define GRALLOC_MODULE_PERFORM_DECIDE_PUSH_BUFFER_HANDLING 0x080000002
 
 // End of CAF values
